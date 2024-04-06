@@ -1,38 +1,80 @@
-.App {
+.mainblock{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.List{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.DoList{
+  width: 160px;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+.DoList input{
+  width: 140px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item{
+  width: 160px;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+  position: relative;
+}
+.item button{
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 2px solid black;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.item button:hover{
+  background-color: red;
+  transform: scale(1.1);
+}
+
+.item button:active{
+  transform: scale(1);
+}
+
+.Add{
+  border-radius: 15px;
+  border: 2px solid black;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.Add:hover{
+  background-color: green;
+  transform: scale(1.1);
+}
+
+.Add:active{
+  transform: scale(1);
+}
+
+.index{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-weight: 600;
 }
